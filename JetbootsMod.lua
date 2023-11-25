@@ -50,6 +50,7 @@ end
 function onButton1Down(mouse)
 	if reloadtime > 0 then return end
 	if walking == true then return end
+	velocity = 5
 	
 	onStart()
 	mouse.Icon = "rbxasset://textures\\ArrowFarCursor.png"
@@ -84,6 +85,8 @@ function onSelected(mouse)
 end
 
 bin.Selected:connect(onSelected)
+
+
 
 
 
